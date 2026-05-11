@@ -14,7 +14,7 @@ const ContactMe = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "${import.meta.env.VITE_API_URL}/api/contacts",
+        `${import.meta.env.VITE_API_URL}/api/contacts`,
         formData,
       );
       toast.success("Message sent successfully!");

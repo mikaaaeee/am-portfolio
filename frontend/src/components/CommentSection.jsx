@@ -14,7 +14,7 @@ const CommentSection = () => {
   const fetchComments = async () => {
     try {
       const response = await axios.get(
-        "${import.meta.env.VITE_API_URL}/api/comments",
+        `${import.meta.env.VITE_API_URL}/api/comments`,
       );
       setComments(response.data);
     } catch (error) {
