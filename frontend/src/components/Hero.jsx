@@ -131,7 +131,7 @@ const Hero = () => {
             onClick={handleClikMe}
             className="bg-[#4A0E4E] text-white px-6 py-2 rounded-full text-xs font-black tracking-widest mb-8 shadow-lg"
           >
-            CLIKC HERE~
+            CLIKC HERE~~
           </motion.button>
 
           <motion.div
