@@ -6,13 +6,13 @@ const hobbyData = [
     id: 1,
     title: "Sunset",
     desc: "The sunset is beautiful isn't it?",
-    img: "/src/assets/pantai.jpeg",
+    img: "/pantai.jpeg",
   },
   {
     id: 2,
     title: "Hiking",
     desc: "Chasing views at Bukit Singa",
-    img: "/src/assets/hiking.jpeg",
+    img: "/hiking.jpeg",
   },
   {
     id: 3,
