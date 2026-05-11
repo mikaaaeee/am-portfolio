@@ -13,7 +13,10 @@ const ContactMe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://127.0.0.1:8000/api/contacts", formData);
+      await axios.post(
+        "${import.meta.env.VITE_API_URL}/api/contacts",
+        formData,
+      );
       toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {

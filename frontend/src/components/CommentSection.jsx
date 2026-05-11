@@ -13,7 +13,9 @@ const CommentSection = () => {
   //2 fetch comment
   const fetchComments = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/comments");
+      const response = await axios.get(
+        "${import.meta.env.VITE_API_URL}/api/comments",
+      );
       setComments(response.data);
     } catch (error) {
       console.error("Failed to fetch data : ", error);
