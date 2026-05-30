@@ -34,7 +34,7 @@ const CommentSection = () => {
     setIsSending(true);
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/comments", {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/comments`, {
         name: name,
         message: message,
       });
