@@ -14,7 +14,7 @@ const CommentSection = () => {
   const fetchComments = async () => {
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/comments`,
+        `https://am-portfolio-production.up.railway.app/api/comments`,
       );
       setComments(response.data);
     } catch (error) {
@@ -34,10 +34,13 @@ const CommentSection = () => {
     setIsSending(true);
 
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL}/api/comments`, {
-        name: name,
-        message: message,
-      });
+      await axios.post(
+        `'https://am-portfolio-production.up.railway.app/api/comments`,
+        {
+          name: name,
+          message: message,
+        },
+      );
 
       toast.success("Commented Successfully!");
       setName("");
